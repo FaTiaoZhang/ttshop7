@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="tt-manager-web:war exploded">
+    <output-path>$PROJECT_DIR$/tt-manager/tt-manager-web/target/tt-manager-web</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="tt-manager-web" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="archive" name="tt-common-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="tt-common" />
+          </element>
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/tt-manager/tt-manager-web/target/tt-manager-web/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="tt-manager-web/web/Web" />
+    </root>
+  </artifact>
+</component>
