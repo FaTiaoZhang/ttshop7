@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="tt-freemarker-web:war">
+    <output-path>$PROJECT_DIR$/tt-freemarker-web/target</output-path>
+    <root id="archive" name="tt-freemarker-web.war">
+      <element id="artifact" artifact-name="tt-freemarker-web:war exploded" />
+    </root>
+  </artifact>
+</component>

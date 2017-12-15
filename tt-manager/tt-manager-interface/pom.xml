@@ -11,5 +11,12 @@
     <packaging>jar</packaging>
     <artifactId>tt-manager-interface</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.dhc</groupId>
+            <artifactId>tt-manager-pojo</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>

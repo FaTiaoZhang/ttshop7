@@ -6,16 +6,32 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="tt-activemq" />
         <module name="tt-common" />
+        <module name="tt-consumer-web" />
+        <module name="tt-freemarker-web" />
+        <module name="tt-item-web" />
+        <module name="tt-lucene" />
         <module name="tt-manager-dao" />
         <module name="tt-manager-interface" />
         <module name="tt-manager-pojo" />
         <module name="tt-manager-service" />
         <module name="tt-manager-web" />
+        <module name="tt-portal-web" />
+        <module name="tt-provider-web" />
+        <module name="tt-search-web" />
+        <module name="tt-shiro-web" />
+        <module name="tt-sso-web" />
+        <module name="tt-upload" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.7">
+      <module name="tt-activemq" target="1.7" />
       <module name="tt-common" target="1.7" />
+      <module name="tt-consumer-web" target="1.7" />
+      <module name="tt-freemarker-web" target="1.7" />
+      <module name="tt-item-web" target="1.7" />
+      <module name="tt-lucene" target="1.7" />
       <module name="tt-manager" target="1.7" />
       <module name="tt-manager-dao" target="1.7" />
       <module name="tt-manager-interface" target="1.7" />
@@ -23,6 +39,14 @@
       <module name="tt-manager-service" target="1.7" />
       <module name="tt-manager-web" target="1.7" />
       <module name="tt-parent" target="1.7" />
+      <module name="tt-portal-web" target="1.7" />
+      <module name="tt-provider-web" target="1.7" />
+      <module name="tt-search-web" target="1.7" />
+      <module name="tt-service" target="1.7" />
+      <module name="tt-shiro-web" target="1.7" />
+      <module name="tt-soa-web" target="1.7" />
+      <module name="tt-sso-web" target="1.7" />
+      <module name="tt-upload" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

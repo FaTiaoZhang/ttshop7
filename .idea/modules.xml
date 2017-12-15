@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/tt-activemq/tt-activemq.iml" filepath="$PROJECT_DIR$/tt-activemq/tt-activemq.iml" />
       <module fileurl="file://$PROJECT_DIR$/tt-common/tt-common.iml" filepath="$PROJECT_DIR$/tt-common/tt-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tt-consumer-web/tt-consumer-web.iml" filepath="$PROJECT_DIR$/tt-consumer-web/tt-consumer-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tt-freemarker-web/tt-freemarker-web.iml" filepath="$PROJECT_DIR$/tt-freemarker-web/tt-freemarker-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tt-item-web/tt-item-web.iml" filepath="$PROJECT_DIR$/tt-item-web/tt-item-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tt-lucene/tt-lucene.iml" filepath="$PROJECT_DIR$/tt-lucene/tt-lucene.iml" />
       <module fileurl="file://$PROJECT_DIR$/tt-manager/tt-manager.iml" filepath="$PROJECT_DIR$/tt-manager/tt-manager.iml" />
       <module fileurl="file://$PROJECT_DIR$/tt-manager/tt-manager-dao/tt-manager-dao.iml" filepath="$PROJECT_DIR$/tt-manager/tt-manager-dao/tt-manager-dao.iml" />
       <module fileurl="file://$PROJECT_DIR$/tt-manager/tt-manager-interface/tt-manager-interface.iml" filepath="$PROJECT_DIR$/tt-manager/tt-manager-interface/tt-manager-interface.iml" />
@@ -10,6 +15,12 @@
       <module fileurl="file://$PROJECT_DIR$/tt-manager/tt-manager-service/tt-manager-service.iml" filepath="$PROJECT_DIR$/tt-manager/tt-manager-service/tt-manager-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/tt-manager/tt-manager-web/tt-manager-web.iml" filepath="$PROJECT_DIR$/tt-manager/tt-manager-web/tt-manager-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/tt-parent/tt-parent.iml" filepath="$PROJECT_DIR$/tt-parent/tt-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tt-portal-web/tt-portal-web.iml" filepath="$PROJECT_DIR$/tt-portal-web/tt-portal-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tt-provider-web/tt-provider-web.iml" filepath="$PROJECT_DIR$/tt-provider-web/tt-provider-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tt-search-web/tt-search-web.iml" filepath="$PROJECT_DIR$/tt-search-web/tt-search-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tt-shiro-web/tt-shiro-web.iml" filepath="$PROJECT_DIR$/tt-shiro-web/tt-shiro-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tt-sso-web/tt-sso-web.iml" filepath="$PROJECT_DIR$/tt-sso-web/tt-sso-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tt-upload/tt-upload.iml" filepath="$PROJECT_DIR$/tt-upload/tt-upload.iml" />
     </modules>
   </component>
 </project>

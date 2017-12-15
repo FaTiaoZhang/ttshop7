@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="tt-provider-web:war">
+    <output-path>$PROJECT_DIR$/tt-provider-web/target</output-path>
+    <root id="archive" name="tt-provider-web.war">
+      <element id="artifact" artifact-name="tt-provider-web:war exploded" />
+    </root>
+  </artifact>
+</component>

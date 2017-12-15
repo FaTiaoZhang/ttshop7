@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dhc.ttshop.dao.TbItemCustomMapper">
+    <sql id="Item_Where_Clause">
+        <where>
+            i.status != 3
+            <if test="query != null and query.title != null and query.title != '' ">
+                and i.title like '%${query.title}%'
+            </if>
+            <if test="query != null and query.status != null and query.status != 0 ">
+                and i.status = #{query.status}
+            </if>
+        </where>
+    </sql>
+    <sql id="Base_Column_List">
+    i.id, i.title, i.sell_point as sellPoint,
+     i.price, i.num, i.barcode, i.image, i.cid,
+      i.status, i.created, i.updated,c.name as catName
+  </sql>
+    <select id="countItems" resultType="_long">
+        select count(1) from tb_item i
+        <include refid="Item_Where_Clause"/>
+    </select>
+    <select id="listItems" resultType="com.dhc.ttshop.pojo.vo.TbItemCustom">
+        select
+        <include refid="Base_Column_List"/>
+        from tb_item i left join tb_item_cat c on i.cid=c.id
+        <include refid="Item_Where_Clause"/>
+        <choose>
+            <when test="order != null and order.sort != null and order.order != null">
+                <foreach collection="order.orderParams" item="item" open="order by " close="" separator=",">
+                    i.${item}
+                </foreach>
+            </when>
+            <otherwise>
+                order by i.id desc
+            </otherwise>
+        </choose>
+        limit #{page.offset},#{page.rows}
+    </select>
+
+    <select id="listSearchImportItems" resultType="com.dhc.ttshop.pojo.vo.TbSearchItemCustom">
+         SELECT
+    i.id,
+    i.title,
+    i.sell_point as sellPoint,
+    i.price,
+    i.image,
+    c.name as catName
+    FROM
+    tb_item i
+    LEFT JOIN tb_item_cat c ON i.cid = c.id
+    WHERE
+    i.status = 1
+    order by i.id desc
+    </select>
+
+    <select id="getSearchItemByItemId" parameterType="_long" resultType="com.dhc.ttshop.pojo.vo.TbSearchItemCustom">
+        SELECT
+    i.id,
+    i.title,
+    i.sell_point as sellPoint,
+    i.price,
+    i.image,
+    c.name as catName
+    FROM
+    tb_item i
+    LEFT JOIN tb_item_cat c ON i.cid = c.id
+    WHERE
+    i.id = #{itemId}
+    order by i.id desc
+    </select>
+
+
+</mapper>
+
